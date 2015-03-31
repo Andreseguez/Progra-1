@@ -1,0 +1,55 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "stdlib.h"
+
+using namespace std;
+
+void main()
+{
+	int opcion, a, b, c, r;
+	do 
+	{
+		cout<<"\n\t MENU";
+		cout<<"\n 1.- Calculo de impuestos";
+		cout<<"\n 2.- Calculo del area de un triangulo";
+		cout<<"\n 3.- Calculo de sueldos";
+		cout<<"\n 4.- Rango del 1 al 10";
+		cout<<"\n 0.- Salir";
+		cout<<"\n Elige una opcion: ";
+		cin>>opcion;
+		switch(opcion)
+		{
+        case 1: cout<<"\n Ingrese el sueldo del empleado: ";
+        cin>>a;
+        r=a*.13;
+        cout<<"\n El impuesto a pagar es: "<<r;break;
+
+		     case 2: cout<<"\n Ingrese la base del triangulo: ";
+         cin>>a;
+         cout<<"\n Ingrese la altura del triangulo: ";
+         cin>>b;
+         r=(a*b)/2;
+         cout<<"\n El area del triangulo es: "<<r;break;
+
+         case 3: cout<<"\n Ingrese las horas trabajadas: ";
+         cin>>a;
+		     cout<<"\n Ingrese el sueldo por hora";
+		     cin>>b;
+	       r=a*b;
+	       cout<<"\n El sueldo a pagar es: "<<r;break;
+
+         case 4: cout<<"\n Ingrese el numero a estudiar: ";
+	       cin>>a;
+	       if(a>0 & a<10)
+		     cout<<"\n El numero ingresado se encuentra dentro del rango";
+	       else
+		     cout<<"\n El numero ingresado se encuentra fuera del rango";break;
+	  
+		   default: cout<<"\n Opcion invalida";
+		}
+		getch();
+	    system("cls");
+	} while(opcion!=0);
+	getch();
+}
