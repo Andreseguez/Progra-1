@@ -1,0 +1,25 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main ()
+{
+	float x, s=0;
+	int n, i, fact=1;
+	cout<<"Introduzca el valor de X: ";
+	cin>>x;
+	cout<<"Ingrese el valor de N: ";
+	cin>>n;
+
+	for (i=1;i<=n;i++) 
+	{
+		fact=fact*i;
+		s = s+pow(x,i)/fact;
+	}
+
+	cout<<"La suma de la serie es: "<<s;
+	getch();
+}
