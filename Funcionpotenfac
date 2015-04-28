@@ -1,0 +1,43 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int funcionpoten(int base, int exponente);
+int FAC(int numero);
+
+void main()
+{
+	int b, e, s;
+	cout<<"Ingrese la base: ";
+	cin>>b;
+	cout<<"Ingrese el exponente: ";
+	cin>>e;
+	s=0;
+	for (int i=1;i<=e;i++)
+		s=s+funcionpoten(b, e)/FAC(e);
+	cout<<"El resultado es: "<<s;
+	getch();
+}
+
+
+int funcionpoten(int base, int exponente)
+{
+   int x;
+   x=1;
+   for (int i=1;i<=exponente;i++)
+      x=x*base;
+   return x;
+   getch ();
+}
+
+
+int FAC(int numero)
+{
+	int x;
+	x=1;
+	for (int i=1;i<=numero;i++)
+		x=x*i;
+	return x;
+}
