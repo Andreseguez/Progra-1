@@ -1,3 +1,24 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int FAC(int numero);
+
+void main ()
+{
+	int n,FAC;
+	cout<<"Introduzca un numero: ";
+	cin>>n;
+	FAC=1;
+	for (int i=1;i<=n;i++)
+		FAC=FAC*i;
+	cout<<"El factorial de "<<n<<" es: "<<FAC;
+	getch();
+
+}
+
 int FAC(int numero)
 {
 	int x;
