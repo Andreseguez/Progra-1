@@ -1,0 +1,8 @@
+int FAC(int numero)
+{
+	int x;
+	x=1;
+	for (int i=1;i<=numero;i++)
+		x=x*i;
+	return x;
+}
